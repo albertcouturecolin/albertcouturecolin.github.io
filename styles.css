@@ -64,11 +64,11 @@ div.RS a img {
 
 
 
-
-div.MiddlePage{
+/* Nouveautés */
+.Page {
     margin-top: 4em;
 }
-/* Nouveautés */
+
 .Page h2 {
     font-family: sans-serif;
     margin: 20px;
@@ -88,7 +88,7 @@ div.Scroll {
     border-radius: 30px 30px 20px 20px;
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 40%;
+    flex-basis: 70%;
 
 }
 
@@ -110,4 +110,28 @@ a.NewCreat-Link p {
     font-size: 15px;
     margin: 0;
     padding: 0 0 20px 20px;
+}
+
+
+/* Projets 1 */
+
+div.Large {
+    padding: 0 10px 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.Projets1-Container {
+    background-color: rgba(255, 238, 0, 0.452);
+    border-radius: 20px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 70%;
+
+}
+
+.Projets1-Vid {
+    width: 100%;
+    border-radius: 20px;
 }
