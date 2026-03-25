@@ -106,7 +106,7 @@ div.RS a img:hover {
 }
 
 .Page h2 {
-    font-size: 30px;
+    font-size: 20px;
     font-style: italic;
     margin: 20px;
     text-decoration: underline;
@@ -177,14 +177,14 @@ a.NewCreat-Link img {
 a.NewCreat-Link h3 {
     color: #ffffff;
     text-align: left;
-    font-size: 20px;
+    font-size: 15px;
     margin: 5px 0 5px 20px;
 }
 
 a.NewCreat-Link p {
     color: #ffffff;
     text-align: left;
-    font-size: 15px;
+    font-size: 10px;
     margin: 0;
     padding: 0 0 15px 20px;
 }
@@ -218,7 +218,7 @@ div.Projets1-Container:hover {
 a.Projets1-Link h3 {
     color: #ffffff;
     text-align: left;
-    font-size: 20px;
+    font-size: 15px;
     margin: 5px 0 8px 20px;
 }
 
@@ -235,15 +235,14 @@ div.Square {
 a.Projets2-Link img {
     BOX-SHADOW: 2px 2px 7px rgb(0 0 0);
     max-width: 90%;
-    border-radius: 20px;
-    border: 5px solid #ffffff;
+    border-radius: 5px;
 }
 
 
 /* Projets 3 */
 
 .ProjetsPage-03 {
-    background-color: var(--bs-backgroundcolor-container);
+    background-color: #000;
     border-radius: 30px 30px 20px 20px;
     flex-grow: 1;
     flex-shrink: 0;
@@ -251,6 +250,13 @@ a.Projets2-Link img {
     transition: background-color 0.25s ease-in-out;
     margin-left: 10px;
     margin-right: 10px;
+    padding-bottom: 5px;
+}
+
+.TitreInsta h2 {
+    font-size: 25px;
+    color: #ffffff;
+    text-decoration: none;
 }
 
 .Titre {
@@ -266,11 +272,12 @@ a.Projets2-Link img {
 }
 
 .Titre a img {
-    max-width: 30px;
+    max-width: 50px;
     margin: 5px;
 
 }
 
 div.Full {
+    padding: 5px;
     display: flex;
 }
