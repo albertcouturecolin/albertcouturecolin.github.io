@@ -1,18 +1,53 @@
 @charset "UTF-8";
 
+:root {
+    --bs-backgroundcolor-body-01: rgb(46 130 227);
+    --bs-backgroundcolor-body-02: rgb(0 9 82);
+    --bs-backgroundcolor-main: rgb(237, 243, 250);
+    --bs-backgroundcolor-container: rgb(46 130 227);
+    --bs-backgroundcolor-containerhover: rgb(99 158 227);
+}
+
 body {
-    background-color: #1b1b1b;
+    min-height: 100%;
     font-family: sans-serif, Roboto, Arial, Helvetica;
-    color: #ffffff;
+    color: #000000;
     text-align: center;
+}
+
+/* css gradient: second layer */
+svg {
+    background: linear-gradient(var(--bs-backgroundcolor-body-01), var(--bs-backgroundcolor-body-02));
+    position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+    z-index: -1;
+    opacity: 15%;
   }
+
+body:before {
+	content:"";
+	position: fixed;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+    background: linear-gradient(var(--bs-backgroundcolor-body-01), var(--bs-backgroundcolor-body-02));
+    z-index: -1;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position: center;
+
+}
 
 
 
 /*Header*/
 div.Main-Avatar {
-    background-color: #000000;
-    box-shadow: 10px 2px 1em rgb(0 0 0);
+    background-color: var(--bs-backgroundcolor-main);
+    box-shadow: 0px 0px 20px rgb(0 0 0);
     border-radius: 30px;
     max-width: 600px;
     margin: auto;
@@ -42,13 +77,6 @@ section h2 {
     z-index: 1;
 }
 
-.Barre {
-    background-color: #000000;
-    height: 2px;
-    width: 50%;
-    margin: 20px auto;
-}
-
 a {
     text-decoration: none;
 }
@@ -60,13 +88,18 @@ div.RS {
 div.RS a img {
     max-width: 30px;
     margin: 5px;
+    filter: contrast(100%) grayscale(100%);
+    transition: filter 0.25s ease-in-out;
+}
+div.RS a img:hover {
+  filter: grayscale(0%);
 }
 
 
 
 /* Nouveautés */
 .Page {
-    margin-top: 4em;
+    margin-top: 5em;
 }
 
 .Page h2 {
@@ -83,13 +116,16 @@ div.Scroll {
     scrollbar-width: none;
 }
 
-.NewCreat-Container {
-    background-color: rgba(255, 250, 179, 0.452);
+div.NewCreat-Container {
+    background-color: var(--bs-backgroundcolor-container);
     border-radius: 30px 30px 20px 20px;
     flex-grow: 1;
     flex-shrink: 0;
-    flex-basis: 70%;
-
+    flex-basis: 70%; 
+    transition: background-color 0.25s ease-in-out;
+}
+div.NewCreat-Container:hover {
+  background-color: var(--bs-backgroundcolor-containerhover);
 }
 
 a.NewCreat-Link img {
@@ -114,24 +150,83 @@ a.NewCreat-Link p {
 
 
 /* Projets 1 */
-
 div.Large {
-    padding: 0 10px 0 10px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     gap: 2em;
 }
 
 .Projets1-Container {
-    background-color: rgba(255, 238, 0, 0.452);
+    background-color: var(--bs-backgroundcolor-container);
     border-radius: 20px;
     flex-grow: 1;
     flex-shrink: 0;
     flex-basis: 70%;
-
+    transition: background-color 0.25s ease-in-out;
+}
+div.Projets1-Container:hover {
+  background-color: var(--bs-backgroundcolor-containerhover);
 }
 
 .Projets1-Vid {
     width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+a.Projets1-Link h3 {
+    color: #ffffff;
+    text-align: left;
+    font-size: 20px;
+    margin: 5px 0 8px 20px;
+}
+
+
+/* Projets 2 */
+div.Square {
+    padding: 10px;
+    display: flex;
+    gap: 0.5em;
+}
+
+a.Projets2-Link img {
+    max-width: 90%;
     border-radius: 20px;
+    border: 5px solid #ffffff;
+}
+
+
+/* Projets 3 */
+
+.ProjetsPage-03 {
+    background-color: var(--bs-backgroundcolor-container);
+    border-radius: 30px 30px 20px 20px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 70%; 
+    transition: background-color 0.25s ease-in-out;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.Titre {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 20px;
+}
+
+
+.Titre h2 {
+    text-align: left;
+}
+
+.Titre a img {
+    max-width: 30px;
+    margin: 5px;
+
+}
+
+div.Full {
+    display: flex;
 }
