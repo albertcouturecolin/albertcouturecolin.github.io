@@ -4,8 +4,8 @@
     --bs-backgroundcolor-body-01: rgb(46 130 227);
     --bs-backgroundcolor-body-02: rgb(0 9 82);
     --bs-backgroundcolor-main: rgb(237, 243, 250);
-    --bs-backgroundcolor-container: rgb(46 130 227);
-    --bs-backgroundcolor-containerhover: rgb(59 99 160);
+    --bs-backgroundcolor-container: rgb(0, 0, 0);
+    --bs-backgroundcolor-containerhover: rgb(46 130 227);
     --bs-backgroundcolor-containerhover-2: rgb(10 141 71);
     --bs-backgroundcolor-containerhover-3: rgb(255 200 21);
     --bs-backgroundcolor-containerhover-4: rgb(200 1 26);
